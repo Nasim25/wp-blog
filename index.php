@@ -15,7 +15,7 @@
     <meta name="author" content="">
     
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <?php wp_head() ?>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo">
-                            <a href="garden-index.html"><img src="images/version/garden-logo.png" alt=""></a>
+                            <a href="garden-index.html"><img src="<?php echo get_template_directory_uri() ?>/images/version/garden-logo.png" alt=""></a>
                         </div><!-- end logo -->
                     </div>
                 </div><!-- end row -->
@@ -110,7 +110,7 @@
                 <div class="masonry-blog clearfix">
                     <div class="left-side">
                         <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_01.jpg" alt="" class="img-fluid">
+                             <img src="<?php echo get_template_directory_uri() ?>/upload/garden_cat_01.jpg" alt="" class="img-fluid">
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
@@ -126,7 +126,7 @@
 
                     <div class="center-side">
                         <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_02.jpg" alt="" class="img-fluid">
+                             <img src="<?php echo get_template_directory_uri() ?>/upload/garden_cat_02.jpg" alt="" class="img-fluid">
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
@@ -142,7 +142,7 @@
 
                     <div class="right-side hidden-md-down">
                         <div class="masonry-box post-media">
-                             <img src="upload/garden_cat_03.jpg" alt="" class="img-fluid">
+                             <img src="<?php echo get_template_directory_uri() ?>/upload/garden_cat_03.jpg" alt="" class="img-fluid">
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
@@ -169,7 +169,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_01.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -191,7 +191,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_02.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_02.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -213,7 +213,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_03.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_03.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -235,7 +235,7 @@
                                     <div class="col-lg-10 offset-lg-1">
                                         <div class="banner-spot clearfix">
                                             <div class="banner-img">
-                                                <img src="upload/banner_05.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/banner_05.jpg" alt="" class="img-fluid">
                                             </div><!-- end banner-img -->
                                         </div><!-- end banner -->
                                     </div><!-- end col -->
@@ -247,7 +247,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_04.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_04.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -269,7 +269,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_05.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_05.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -291,7 +291,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_06.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_06.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -313,7 +313,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_07.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_07.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -335,7 +335,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="garden-single.html" title="">
-                                                <img src="upload/garden_sq_08.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_08.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -389,7 +389,7 @@
                                     <div class="list-group">
                                         <a href="garden-single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="w-100 justify-content-between">
-                                                <img src="upload/garden_sq_09.jpg" alt="" class="img-fluid float-left">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_09.jpg" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1">5 Beautiful buildings you need to before dying</h5>
                                                 <small>12 Jan, 2016</small>
                                             </div>
@@ -397,7 +397,7 @@
 
                                         <a href="garden-single.html" class="list-group-item list-group-item-action flex-column align-items-start">
                                             <div class="w-100 justify-content-between">
-                                                <img src="upload/garden_sq_06.jpg" alt="" class="img-fluid float-left">
+                                                <img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_06.jpg" alt="" class="img-fluid float-left">
                                                 <h5 class="mb-1">Let's make an introduction for creative life</h5>
                                                 <small>11 Jan, 2016</small>
                                             </div>
@@ -418,7 +418,7 @@
                                 <h2 class="widget-title">Advertising</h2>
                                 <div class="banner-spot clearfix">
                                     <div class="banner-img">
-                                        <img src="upload/banner_04.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri() ?>/upload/banner_04.jpg" alt="" class="img-fluid">
                                     </div><!-- end banner-img -->
                                 </div><!-- end banner -->
                             </div><!-- end widget -->
@@ -426,15 +426,15 @@
                             <div class="widget">
                                 <h2 class="widget-title">Instagram Feed</h2>
                                 <div class="instagram-wrapper clearfix">
-                                    <a href="#"><img src="upload/garden_sq_01.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_02.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_03.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_04.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_05.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_06.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_07.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_08.jpg" alt="" class="img-fluid"></a>
-                                    <a href="#"><img src="upload/garden_sq_09.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_01.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_02.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_03.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_04.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_05.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_06.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_07.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_08.jpg" alt="" class="img-fluid"></a>
+                                    <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_09.jpg" alt="" class="img-fluid"></a>
                                 </div><!-- end Instagram wrapper -->
                             </div><!-- end widget -->
 
@@ -462,7 +462,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="widget">
                             <div class="footer-text text-center">
-                                <a href="index.html"><img src="images/version/garden-footer-logo.png" alt="" class="img-fluid"></a>
+                                <a href="index.html"><img src="<?php echo get_template_directory_uri() ?>/images/version/garden-footer-logo.png" alt="" class="img-fluid"></a>
                                 <p>Forest Time is a personal blog for handcrafted, cameramade photography content, fashion styles from independent creatives around the world.</p>
                                 <div class="social">
                                     <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              

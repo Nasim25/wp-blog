@@ -1,6 +1,6 @@
 <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                <div class="sidebar">
-                    <div class="widget">
+    <div class="sidebar">
+        <!-- <div class="widget">
                         <h2 class="widget-title">Search</h2>
                         <form class="form-inline search-form">
                             <div class="form-group">
@@ -8,7 +8,7 @@
                             </div>
                             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
                         </form>
-                    </div><!-- end widget -->
+                    </div>
 
                     <div class="widget">
                         <h2 class="widget-title">Recent Posts</h2>
@@ -38,17 +38,17 @@
                                     </div>
                                 </a>
                             </div>
-                        </div><!-- end blog-list -->
-                    </div><!-- end widget -->
+                        </div>
+                    </div>
 
                     <div class="widget">
                         <h2 class="widget-title">Advertising</h2>
                         <div class="banner-spot clearfix">
                             <div class="banner-img">
                                 <img src="<?php echo get_template_directory_uri() ?>/upload/banner_04.jpg" alt="" class="img-fluid">
-                            </div><!-- end banner-img -->
-                        </div><!-- end banner -->
-                    </div><!-- end widget -->
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="widget">
                         <h2 class="widget-title">Instagram Feed</h2>
@@ -62,8 +62,8 @@
                             <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_07.jpg" alt="" class="img-fluid"></a>
                             <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_08.jpg" alt="" class="img-fluid"></a>
                             <a href="#"><img src="<?php echo get_template_directory_uri() ?>/upload/garden_sq_09.jpg" alt="" class="img-fluid"></a>
-                        </div><!-- end Instagram wrapper -->
-                    </div><!-- end widget -->
+                        </div>
+                    </div>
 
                     <div class="widget">
                         <h2 class="widget-title">Popular Categories</h2>
@@ -75,7 +75,14 @@
                                 <li><a href="#">Shopping Guides <span>(22)</span></a></li>
                                 <li><a href="#">Pool Design <span>(66)</span></a></li>
                             </ul>
-                        </div><!-- end link-widget -->
-                    </div><!-- end widget -->
-                </div><!-- end sidebar -->
-            </div><!-- end col -->
+                        </div>
+                    </div> -->
+
+        <?php if (is_active_sidebar('sidebar-1')) { ?>
+            
+                <?php dynamic_sidebar('sidebar-1'); ?>
+            
+        <?php } ?>
+
+    </div><!-- end sidebar -->
+</div><!-- end col -->

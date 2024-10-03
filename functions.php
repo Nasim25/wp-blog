@@ -7,7 +7,6 @@ function nasim_theme_setup()
         'main-menu' => __('Main Menu', 'nasim_blog')
     ));
 }
-
 add_action('after_setup_theme', 'nasim_theme_setup');
 
 function add_additional_class_on_li($classes, $item, $args)
@@ -18,6 +17,21 @@ function add_additional_class_on_li($classes, $item, $args)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
+function dynamic_widget()
+{
+    register_sidebar(array(
+        'name' => __('Widget', 'nasim_blog'),
+        'id' => 'sidebar-1',
+        'description' => __('Our Widget', 'nasim_blog'),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
+    ));
+}
+
+add_action('widgets_init','dynamic_widget');
 
 function nasim_blog_script_css()
 {
@@ -32,7 +46,6 @@ function nasim_blog_script_css()
     wp_enqueue_script('tether-js', get_template_directory_uri() . '/js/tether.min.js', array(), 'all');
     wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), 'all');
     wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/custom.js', array(), 'all');
-    // <script src="js/jquery.min.js"></script>
 }
 
 add_action('wp_enqueue_scripts', 'nasim_blog_script_css');

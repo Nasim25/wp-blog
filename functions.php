@@ -1,5 +1,24 @@
 <?php
 
+function nasim_theme_setup()
+{
+    load_theme_textdomain('nasim_blog');
+    register_nav_menus(array(
+        'main-menu' => __('Main Menu', 'nasim_blog')
+    ));
+}
+
+add_action('after_setup_theme', 'nasim_theme_setup');
+
+function add_additional_class_on_li($classes, $item, $args)
+{
+    if (isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
 function nasim_blog_script_css()
 {
     wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Droid+Sans:400,700');

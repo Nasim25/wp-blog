@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Site Metas -->
-    <title>Forest Time - Stylish Magazine Blog Template</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <?php wp_head() ?>
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Site Metas -->
+<title>Forest Time - Stylish Magazine Blog Template</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<?php wp_head() ?>
 </head>
+
 <body <?php body_class() ?>>
 
     <div id="wrapper">
@@ -80,7 +81,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-md-center" id="Forest Timemenu">
-                        <ul class="navbar-nav">
+                        <!-- <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link color-green-hover" href="garden-index.html">Home</a>
                             </li>
@@ -99,7 +100,15 @@
                             <li class="nav-item">
                                 <a class="nav-link color-green-hover" href="garden-contact.html">Contact</a>
                             </li>
-                        </ul>
+                        </ul> -->
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'main-menu',
+                            'menu_class' => 'navbar-nav',
+                            'container' => false,
+                            'add_li_class' => 'nav-link color-green-hover',
+                        ));
+                        ?>
                     </div>
                 </nav>
             </div><!-- end container -->

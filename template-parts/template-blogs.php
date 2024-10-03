@@ -20,14 +20,14 @@ if (have_posts()) {
                     </div>
 
                     <div class="blog-meta big-meta col-md-8">
-                        <span class="bg-aqua"><a href="garden-category.html" title="">Indoor</a></span>
                         <h4><a href="<?php the_permalink() ?>" title=""><?php the_title() ?></a></h4>
 
                         <?php the_excerpt() ?>
 
                         <small><a href="garden-category.html" title=""><i class="fa fa-eye"></i> 1887</a></small>
-                        <small><a href="garden-single.html" title="">11 July, 2017</a></small>
-                        <small><a href="#" title="">by Matilda</a></small>
+                        <small><a href="garden-single.html" title=""><?php the_date() ?></a></small>
+                        <small><a href="#" title="">by <?php the_author_posts_link() ?></a></small>
+                        <?php the_category() ?>
                     </div>
                 </div>
 

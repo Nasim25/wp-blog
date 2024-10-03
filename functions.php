@@ -1,12 +1,15 @@
 <?php
 
 function nasim_theme_setup()
-{   
+{
     // for language
     load_theme_textdomain('nasim_blog');
 
     // for title
     add_theme_support('title-tag');
+    // for post thamb
+    add_theme_support('post-thumbnails');
+    // for menues
     register_nav_menus(array(
         'main-menu' => __('Main Menu', 'nasim_blog')
     ));
@@ -35,7 +38,7 @@ function dynamic_widget()
     ));
 }
 
-add_action('widgets_init','dynamic_widget');
+add_action('widgets_init', 'dynamic_widget');
 
 function nasim_blog_script_css()
 {
